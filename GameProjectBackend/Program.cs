@@ -13,7 +13,7 @@ namespace GameProjectBackend
             user1.DateOfBirth = new DateTime(2000, 06, 06);
             user1.NationalityId = "1111111111";
             UserManager userManager = new UserManager( new UserValidateManager());
-            userManager.Add(user1);
+            //userManager.Add(user1);
 
 
             Campaign campaign = new Campaign();
@@ -29,7 +29,7 @@ namespace GameProjectBackend
             game.Price = 2000;
 
             GameSaleManager gameSaleManager = new GameSaleManager();
-            //gameSaleManager.Sale(user1, game, campaign);
+            gameSaleManager.Sale(user1, game, campaign);
 
             
 
